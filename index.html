@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHINA VERIFICATION SYSTEM</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>CHINA VERIFICATION SYSTEM</h1>
+      <form id="entryForm">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="salesOrder">Sales Order Number:</label>
+        <input type="text" id="salesOrder" name="salesOrder" required>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <h2>Scanned Barcodes</h2>
+      <table id="barcodeTable">
+        <thead>
+          <tr>
+            <th>DATE</th>
+            <th>SALES ORDER NUMBER</th>
+            <th>BARCODE</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+
+</html>
